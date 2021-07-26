@@ -52,7 +52,8 @@ Javascript client-side form validation, such as, testing for valid RegEx for inp
 
 ```js
 if (window.innerWidth >= 768) // testing for viewport width and applying classes based on it
-
+```
+```js
 function emailTest (email) {
     return /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(email);
 } // testing regular expressions and how to implement it on JS
