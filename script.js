@@ -5,14 +5,11 @@ const button = document.querySelector(".btn-notify");
 const warning = document.createElement("span");
 
 
-
-
-
 function ValidateForm(event) {
     const emailValue = email.value.trim(); //trim() removes blank characters from the start of the string //
     
     if (emailValue === '') {
-        // button.style.margin = "20px 10px 0px";        
+              
         email.parentElement.insertBefore(warning, inputBox.children[1]); //show error 
         warning.className = ("error"); // adding error class       
         email.className = ("input-email red-border") //adding error class
@@ -23,7 +20,6 @@ function ValidateForm(event) {
         }
         
     } else if (!emailTest(emailValue)) {        
-        // button.style.margin = "20px 10px 0px";      
         email.parentElement.insertBefore(warning, inputBox.children[1]); //show error 
         warning.className = ("error"); // add error class
         email.className = ("input-email red-border") //adding error class
@@ -35,7 +31,6 @@ function ValidateForm(event) {
         }
 
     } else {
-        // button.style.margin = "0px 10px 0px";
         email.className = ("input-email green-border");
         inputBox.removeChild(warning);
     }
