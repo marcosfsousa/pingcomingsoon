@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop Screenshot](.\images\screenshot1440.png)
+![Desktop Screenshot](.\images\screenshot1440.png)
 
 ### Links
 
