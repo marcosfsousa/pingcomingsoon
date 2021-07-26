@@ -1,0 +1,151 @@
+:root {
+    --font-family: 'Libre Franklin', sans-serif;
+    --font-size: 20px;
+    --blue: hsl(223,87%,63%);
+    --pale-blue: hsl(223,100%,88%);
+    --light-red: hsl(354,100%,66%);
+    --gray: hsl(0,0%,59%);
+    --very-dark-blue: hsl(209,33%,12%);
+    --light-green: hsl(131, 65%, 47%);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px 20px;
+}
+
+
+.img-logo {
+    margin: 35px auto;
+    width: 60px;
+}
+
+.main-heading {
+    font-family: var(--font-family);
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 1.6em;
+}
+
+.bold-heading {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+.sub-heading {    
+    font-family: var(--font-family);
+    color: var(--very-dark-blue);
+    font-weight: 300;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    padding-bottom: 30px;
+}
+
+.input-email {
+    height: 40px;    
+    padding: 5px 30px;
+    margin: 8px 10px 10px;
+    border: 1px solid var(--pale-blue);
+    border-radius: 20px;
+}
+
+.input-email::placeholder {
+    color: var(--pale-blue);
+    font-size: 0.9em;
+}
+
+.input-email:focus {
+    outline: none;
+}
+
+.red-border {
+   border-color: var(--light-red);
+}
+
+.green-border {
+   border-color: var(--light-green);
+}
+
+.error {
+    font-family: var(--font-family);
+    color: var(--light-red);
+    font-size: 0.75em;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.btn-notify {
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    padding: 5px;
+    margin: 0px 10px 0px;
+    box-shadow: 1px 13px 25px -15px var(--very-dark-blue);
+    
+}
+
+.btn-notify:hover {
+    cursor: pointer;
+}
+
+.img-dashboard {  
+    width: 325px;
+    margin: 0px 25px;
+    padding: 35px 0px 100px;
+}
+
+.list-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    list-style-type: none;
+    margin: 0px 0px 30px;
+}
+
+ion-icon {
+    font-size: 24px;
+    color: var(--blue);
+    border: 1px solid var(--pale-blue);
+    border-radius: 50px;
+    padding: 7px;
+    margin: 0px 5px 7.5px;
+}
+
+ion-icon:hover {
+    cursor: pointer;
+    color: var(--pale-blue);
+}
+
+.copyright {
+    font-family: var(--font-family);
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 0.75em;
+    text-align: center;
+    margin-bottom: 25px;
+}
