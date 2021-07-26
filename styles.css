@@ -19,6 +19,11 @@ body {
     padding: 0;
 }
 
+.wrapper {
+    width: 320px;
+    margin: 0 auto;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -55,7 +60,7 @@ body {
 .input-box {
     display: flex;
     flex-direction: column;
-    margin: 10px 30px;
+    margin: 10px 0px;
     padding-bottom: 30px;
 }
 
@@ -90,11 +95,8 @@ body {
     font-size: 0.75em;
     font-style: italic;
     text-align: center;
+    margin-bottom: 10px;
     
-}
-
-.hidden {
-    visibility: hidden;
 }
 
 .btn-notify {
@@ -114,9 +116,8 @@ body {
 }
 
 .img-dashboard {  
-    width: 325px;
-    margin: 0px 25px;
-    padding: 35px 0px 100px;
+    width: 320px;
+
 }
 
 .list-social {
@@ -124,7 +125,7 @@ body {
     flex-direction: row;
     justify-content: center;   
     list-style-type: none;
-    margin: 0px 0px 30px;
+    margin: 70px 0px 30px;
 }
 
 ion-icon {
@@ -138,7 +139,8 @@ ion-icon {
 
 ion-icon:hover {
     cursor: pointer;
-    color: var(--pale-blue);
+    background-color: var(--blue);
+    color: white;
 }
 
 .copyright {
@@ -148,4 +150,58 @@ ion-icon:hover {
     font-size: 0.75em;
     text-align: center;
     margin-bottom: 25px;
+}
+
+@media screen and (min-width:768px) {
+    .wrapper {
+        width: 640px;
+    }
+
+    .img-logo {
+        width: 90px;
+    }
+
+    .main-heading {
+        font-size: 3em;
+        margin: 10px 10px;
+    }
+
+    .sub-heading {
+        font-size: 1.2em;
+    }
+
+    .input-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .input-email {
+        width: 500px;
+        height: 52px;
+        border-radius: 27px;
+    }
+
+    .input-email::placeholder {
+        font-size: 1.1em;
+    }
+
+    .btn-notify {
+        width: 200px;
+        margin: 0px 10px;
+        height: 52px;
+        border-radius: 27px;
+    }
+
+    .desktop-error {
+        position: absolute;
+        top: 67px;
+        left: 39px;
+    }
+
+    .img-dashboard {
+        width: 640px;
+        margin-top: 20px;
+    }
 }
